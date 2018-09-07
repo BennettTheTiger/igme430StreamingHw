@@ -42,9 +42,7 @@ const getStream = (request, response) => {
         'Content-Length': chunksize,
         'Content-Type': 'video/mp4',
       });
-    }
-    // handle mp3 requests
-    else if (requestData[1] === 'mp3') {
+    } else if (requestData[1] === 'mp3') {
       response.writeHead(206,
         {
           'Content-Range': `bytes ${start}-${end}/${total}`,
@@ -52,9 +50,7 @@ const getStream = (request, response) => {
           'Content-Length': chunksize,
           'Content-Type': 'audio/mpeg',
         });
-    }
-    // throw an internal server error 500 or 501
-    else {
+    } else {
       response.writeHead(500);
     }
 
