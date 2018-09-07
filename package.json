@@ -1,0 +1,26 @@
+{
+  "name": "streaming-media-assignment",
+  "version": "1.0.0",
+  "description": "A simple media streamer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Test Complete",
+    "start": "node ./src/server.js",
+    "pretest":"eslint ./src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IGM-RichMedia-at-RIT/streaming-media-assignment.git"
+  },
+  "author": "Bennett Schoonerman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IGM-RichMedia-at-RIT/streaming-media-assignment/issues"
+  },
+  "homepage": "https://github.com/IGM-RichMedia-at-RIT/streaming-media-assignment#readme",
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-config-airbnb": "^17.1.0"
+  }
+}
